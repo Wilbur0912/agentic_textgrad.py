@@ -134,8 +134,8 @@ def optimize_code(task: str, expected_output: str, max_steps: int = 3):
 # ===============================
 if __name__ == "__main__":
     final_code = optimize_code(
-        "Write a Python function that prints 'hello world'.",
-        expected_output="hello world",
+        "Write a Python function that loads the iris dataset and chooses the best model hyperparameters to classify iris species.",
+        expected_output="think yourself what is the best output",
         max_steps=2
     )
     print("\n=== Final Optimized Code ===\n", final_code[:500])
