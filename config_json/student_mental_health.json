@@ -1,0 +1,38 @@
+{
+  "dataset_name": "The State of Student Minds",
+  "path": "data/student_mental_health.csv",
+  "description": "This dataset captures various mental health factors among students, including academic pressure, depression, anxiety, panic attacks, and demographic information. It enables exploration of how academic and personal conditions influence students' mental well-being.",
+  "columns": {
+    "Timestamp": "datetime",
+    "Choose your gender": "string",
+    "Age": "float",
+    "What is your course?": "string",
+    "Your current year of Study": "string",
+    "What is your CGPA?": "float",
+    "Marital status": "boolean",
+    "Do you have Depression?": "boolean",
+    "Do you have Anxiety?": "boolean",
+    "Do you have Panic attack?": "boolean"
+  },
+  "target": "Do you have Depression?",
+  "notes": {
+    "source": "Kaggle — The State of Student Minds: A Data-Driven Study on Mental Health Factors in the Academic Environment.",
+    "license": "CC0: Public Domain",
+    "size": {
+      "rows": 101,
+      "columns": 10
+    },
+    "feature_distribution": {
+      "gender": {"Female": 74, "Male": 27},
+      "age_range": {"min": 18, "max": 24, "mean": 20.5, "std": 2.48},
+      "course": {"BCS": 18, "Engineering": 17, "Others": 66},
+      "year_of_study": {"Year 1": 41, "Year 3": 19, "Others": 41},
+      "cgpa_range": {"3.5–4.0": 47, "3.0–3.49": 43, "Others": 11},
+      "marital_status": {"True": 16, "False": 85},
+      "depression": {"True": 35, "False": 66},
+      "anxiety": {"True": 34, "False": 67},
+      "panic_attack": {"True": 33, "False": 68}
+    },
+    "usage": "Useful for studying mental health patterns, predicting risk of depression/anxiety, and evaluating the relationship between academic and psychological factors."
+  }
+}

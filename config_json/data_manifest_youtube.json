@@ -1,0 +1,38 @@
+{
+  "dataset_name": "YouTube Channel Information v2",
+  "path": "data/youtube_channel_info_v2.csv",
+  "description": "Comprehensive dataset of YouTube channels combining static metadata and engagement metrics. Each row represents a YouTube channel with its unique channel ID, category, country, creation date, subscriber count, total views, and other related metadata. The dataset is suitable for social media analytics, trend modeling, and creator performance analysis.",
+  "columns": {
+    "channel_name": "string",
+    "channel_id": "string",
+    "category": "string",
+    "country": "string",
+    "defaultLanguage": "string",
+    "subscriber_count": "int",
+    "view_count": "int",
+    "created_date": "datetime",
+    "description": "string",
+    "custom_url": "string",
+    "uploads_playlist_id": "string",
+    "last_10_video_ids": "string",
+    "videos_last_30_days": "int",
+    "views_last_30_days": "int"
+  },
+  "target": null,
+  "notes": {
+    "source": "Collected from YouTube Data API and publicly available sources.",
+    "version": "v2",
+    "license": "Apache 2.0",
+    "update_frequency": "Not specified",
+    "disclaimer": "This dataset does not represent an official ranked list of YouTube channels. Channels were collected and filtered based on engagement and popularity metrics.",
+    "known_issues": [
+      "Some channels may be duplicates or impersonations of popular creators.",
+      "Category labels are extracted from Wikipedia links and may not be standardized."
+    ],
+    "version_history": {
+      "v1": "Base dataset with static metadata and engagement metrics.",
+      "v2": "Added upload playlist ID, last 10 video IDs, and recent activity metrics.",
+      "v3": "Renamed files for consistency."
+    }
+  }
+}

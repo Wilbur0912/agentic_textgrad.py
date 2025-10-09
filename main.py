@@ -14,7 +14,7 @@ import subprocess
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-engine = tg.get_engine("gpt-4o-mini")
+engine = tg.get_engine("gpt-4o")
 tg.set_backward_engine(engine, override=True)
 
 CODE_DIR = "temp_code"
@@ -39,7 +39,7 @@ def clean_code_output(raw_code: str) -> str:
 def generate_code(prompt: str) -> str:
     """Generate Python code using GPT."""
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         messages=[{"role": "user", "content": prompt}]
     )
     code = response.choices[0].message.content
@@ -192,15 +192,15 @@ if __name__ == "__main__":
         "also write code to visualize data with umap"
         "also choose the metrics yourself that express the most comprehensive evaluation of the model performance"
         "also visualize data with the plot you think is the most suitable"
-        "output all the plot, metrics with jpg or png file"
+        "output all the plot, metrics with jpg or png file, also output the plot information in a txt file"
         "you have to generate out the plot that is commonly used in thesis and paper, try to make it comprehensive"
-        "put all of the result in a folder named results"
+        "put all of the result in a folder named results, and if results folder already exist, just overwrite it" 
         ,
         requires_grad=False,
         role_description="system prompt (task definition)"
     )
 
-    DATASET_PATH = "data_manifest.json"
+    DATASET_PATH = "config_json/gdp_per_country_1975_2025.json"
     MAX_STEPS = 2
 
     dataset_info = tg.Variable(

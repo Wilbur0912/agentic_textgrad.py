@@ -1,0 +1,44 @@
+{
+  "dataset_name": "GDP per Country (1975–2025)",
+  "path": "data/GDP_1975_2025_uploaded.csv",
+  "description": "This dataset provides annual GDP values (in USD billions) for 208 countries and territories, covering 1975 through 2025. It includes historical data (1975–2024) and projected estimates for 2025. The dataset captures both major and developing economies, reflecting geopolitical and economic transformations over the past 50 years.",
+  "columns": {
+    "Country": "string",
+    "1975": "float",
+    "1976": "float",
+    "1977": "float",
+    "1978": "float",
+    "1979": "float",
+    "1980": "float",
+    "1981": "float",
+    "1982": "float",
+    "1983": "float",
+    "...": "float",
+    "2025": "float"
+  },
+  "target": "2025",
+  "notes": {
+    "source": "Kaggle — GDP per Country 1975–2025",
+    "license": "CC BY 4.0",
+    "size": {
+      "rows": 208,
+      "columns": 52
+    },
+    "time_coverage": {
+      "start_year": 1975,
+      "end_year": 2025,
+      "projection_note": "2025 values are projected estimates based on IMF and World Bank trends."
+    },
+    "data_quality": {
+      "missing_values": "Some countries (e.g., Afghanistan, South Sudan, Soviet Union) have missing values due to incomplete IMF records or historical dissolution.",
+      "consistency": "All GDP values are expressed in constant USD billions."
+    },
+    "geopolitical_notes": {
+      "Soviet Union": "Exists until 1991, then splits into 15 independent republics.",
+      "Yugoslavia": "Fragmented into multiple successor states in the 1990s.",
+      "Yemen": "North and South Yemen unified in 1990.",
+      "Sudan": "Split into Sudan and South Sudan in 2011."
+    },
+    "usage": "Ideal for analyzing long-term economic growth, visualizing GDP evolution by country, performing time-series forecasting, and studying global economic transitions."
+  }
+}

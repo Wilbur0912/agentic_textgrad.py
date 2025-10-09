@@ -1,0 +1,44 @@
+{
+  "dataset_name": "Student Achievement Trends",
+  "path": "data/StudentsPerformance.csv",
+  "description": "This dataset contains demographic and educational factors related to student performance in math, reading, and writing exams. It includes 1,000 students, capturing their gender, race/ethnicity, parental education level, lunch type, and test preparation course participation, alongside their exam scores. The goal is to uncover how background and preparation influence academic achievement.",
+  "columns": {
+    "gender": "string",
+    "race/ethnicity": "string",
+    "parental level of education": "string",
+    "lunch": "string",
+    "test preparation course": "string",
+    "math score": "float",
+    "reading score": "float",
+    "writing score": "float"
+  },
+  "target": "math score",
+  "notes": {
+    "source": "Public educational dataset, commonly known as 'StudentsPerformance.csv' on Kaggle.",
+    "license": "CC0: Public Domain",
+    "size": {
+      "rows": 1000,
+      "columns": 8
+    },
+    "feature_distribution": {
+      "gender": {"female": 518, "male": 482},
+      "race/ethnicity": {"group A": 89, "group B": 190, "group C": 319, "group D": 262, "group E": 140},
+      "parental level of education": {
+        "some college": 226,
+        "associate's degree": 222,
+        "high school": 196,
+        "some high school": 179,
+        "bachelor's degree": 118,
+        "master's degree": 59
+      },
+      "lunch": {"standard": 645, "free/reduced": 355},
+      "test preparation course": {"none": 642, "completed": 358}
+    },
+    "score_statistics": {
+      "math score": {"min": 0, "max": 100, "mean": 66.1, "median": 66.0},
+      "reading score": {"min": 17, "max": 100, "mean": 69.2, "median": 70.0},
+      "writing score": {"min": 10, "max": 100, "mean": 68.1, "median": 69.0}
+    },
+    "usage": "Useful for analyzing educational inequality, studying performance gaps, and building regression or classification models to predict exam outcomes."
+  }
+}

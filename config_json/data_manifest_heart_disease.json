@@ -1,0 +1,21 @@
+{
+  "dataset_name": "Heart Disease UCI",
+  "path": "data/heart.csv",
+  "description": "The classic Heart Disease dataset from the UCI Machine Learning Repository, used to predict whether a patient has heart disease based on clinical and demographic features.",
+  "columns": {
+    "age": "float",
+    "sex": "int",
+    "cp": "int",
+    "trestbps": "float",
+    "chol": "float",
+    "fbs": "int",
+    "restecg": "int",
+    "thalach": "float",
+    "exang": "int",
+    "oldpeak": "float",
+    "slope": "int",
+    "ca": "int",
+    "thal": "int"
+  },
+  "target": "target"
+}
